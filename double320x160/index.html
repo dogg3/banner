@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Desktop 690x160</title>
+    <title>Desktop 320x160</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src="jquery-3.2.1.min.js"></script>
@@ -18,15 +18,22 @@
 				        $('.sprite').css("background-position", "-640px");
 	    				count++;
 				        break;
-				    default:
+				    case 2:
+				        $('.sprite').css("background-position", "-960px");
+	    				count++;
+				        break;
+				    case 3:
 				        $('.sprite').css("background-position", "-0px");
 	    				count = 0;
+	    				break;
 				}
     		}; setInterval(img, 2000);
 		});
     </script>
   </head>
   <body>
-    <div class="sprite"></div>
+    <div class="sprite">
+    	<div class="inner"></div>
+    </div>
   </body>
 </html>

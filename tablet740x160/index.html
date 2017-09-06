@@ -8,14 +8,18 @@
     <script type="text/javascript">
 		$(document).ready(function(){
     		var count = 0;
+    		$("#textLeft").html("<p>11 lägenhet med pool, där du inte<br> behöver välja mellan aktiv livstil och egentid</p>");
 			var img = function(){
 	    		switch(count) {
 				    case 0:
 				    	$(".sprite").fadeOut(500, function(){
 				    		$('.sprite').css("background-position", "-740px")
+				    		$('#textLeft').empty();
 
 				    	});
 				    	$(".sprite").fadeIn(500, function(){
+				    		$('#textLeft').html("<h2>allrum</h2>");
+				    		$('#textRight').html("<h2>vilorum</h2>")
 				    		$(".line").show(300, function(){
 				    			
 
@@ -26,19 +30,24 @@
 				        break;
 				    case 1:
 				    	$(".sprite").fadeOut(600, function(){
+				    		$('#textLeft').html("<h2>INOMHUS</h2>");
+				    		$('#textRight').html("<h2>UTOMHUS</h2>")
 				        	$(".sprite").css("background-position", "-1480px");
 				        	$(".line").hide();
 
 				        });
-				        $(".sprite").fadeIn(500);
+				        $(".sprite").fadeIn(500, function(){
+								$(".line").show(300);
+				        });
+
 	    				count++;
 				        break;
-				    default:
+				    case 2:
 				    	$(".sprite").css("background-position", "-0px");
 	    				count = 0;
 	    				break;
 				}
-    		}; setInterval(img, 3000);
+    		}; setInterval(img, 4000);
 		});
     </script>
   </head>
@@ -46,7 +55,9 @@
     <div class="sprite">
     <header></header>
     	<div class="container">
+    	<div id="textLeft"></div>
     		<span class="line"></span>
+    	<div id="textRight"></div>
     </div>
     <footer></footer>
    </div>
