@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Desktop 690x160</title>
+    <title>Desktop 740x160</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" type="text/css">
+    
     <script src="jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
 		$(document).ready(function(){
@@ -11,11 +12,22 @@
 			var img = function(){
 	    		switch(count) {
 				    case 0:
-				        $('.sprite').css("background-position", "-740px");
+				    	$(".sprite").fadeOut("slow", function(){
+				    		$('.sprite').css("background-position", "-740px").delay(800);
+
+				    	});
+				    	
+				        
+				        
 	    				count++;
 				        break;
 				    case 1:
 				        $('.sprite').css("background-position", "-1480px");
+				        $('.sprite').animate("opacity", "sh");
+	    				count++;
+				        break;
+				    case 2:
+				        $('.sprite').css("background-position", "-2220px");
 	    				count++;
 				        break;
 				    default:
