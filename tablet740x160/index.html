@@ -16,33 +16,27 @@
 
 				    	});
 				    	$(".sprite").fadeIn(500, function(){
-				    		$(".sprite").html("<span></span>")
+				    		$(".line").show(300, function(){
+				    			
+
+				    		});
 
 				    	});
-
-				    	
-				        
-				        
-	    				count++;
+					count++;
 				        break;
 				    case 1:
-				        $('.sprite').css("background-position", "-1480px");
-				        $('.sprite').animate("opacity", "sh");
-	    				count++;
-				        break;
-				    case 2:
-				        $('.sprite').css("background-position", "-2220px");
+				        $(".sprite").css("background-position", "-1480px");
 	    				count++;
 				        break;
 				    default:
-				        $('.sprite').css("background-position", "-0px");
 	    				count = 0;
+	    				break;
 				}
     		}; setInterval(img, 2000);
 		});
     </script>
   </head>
   <body>
-    <div class="sprite"></div>
+    <div class="sprite"><span class="line"></span></div>
   </body>
 </html>

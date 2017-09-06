@@ -12,4 +12,5 @@ span {
 	height:7px;
 	width:150px;
 	background-color: white;
+	display: none;
 }
