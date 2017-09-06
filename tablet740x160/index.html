@@ -31,7 +31,7 @@
 				    case 1:
 				    	$(".sprite").fadeOut(600, function(){
 				    		$('#textLeft').html("<h2>INOMHUS</h2>");
-				    		$('#textRight').html("<h2>UTOMHUS</h2>")
+				    		$('#textRight').html("<h2>UTOMHUS</h2>");
 				        	$(".sprite").css("background-position", "-1480px");
 				        	$(".line").hide();
 
@@ -39,13 +39,36 @@
 				        $(".sprite").fadeIn(500, function(){
 								$(".line").show(300);
 				        });
-
-	    				count++;
+						count++;
 				        break;
 				    case 2:
-				    	$(".sprite").css("background-position", "-0px");
-	    				count = 0;
+				    	
+				        	$(".sprite").css("background-position", "-1480px");
+				        	$(".line").hide();
+				        	$('#textLeft').empty();
+				    		$('#textRight').empty();
+
+				       
+						count++;
+						break;
+
+				    case 3:
+				    	$('#textLeft').empty();
+				  		$('#textRight').empty();
+				  		$(".sprite").fadeOut(300, function(){
+				  			$(".line").hide();
+				    		$('.sprite').css("background-position", "-0px")
+				    		$('#textLeft').empty();
+
+				    	});
+				    	$(".sprite").fadeIn(300, function(){
+				    		$("#textLeft").html("<p>11 lägenhet med pool, där du inte<br> behöver välja mellan aktiv livstil och egentid</p>");
+
+				    	});
+						count = 0;
 	    				break;
+	    			
+
 				}
     		}; setInterval(img, 4000);
 		});
