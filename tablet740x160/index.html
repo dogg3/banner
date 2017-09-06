@@ -12,10 +12,12 @@
 			var img = function(){
 	    		switch(count) {
 				    case 0:
-				    	$(".sprite").fadeOut("slow", function(){
-				    		$('.sprite').css("background-position", "-740px").delay(800);
+				    	$(".sprite").fadeOut(500, function(){
+				    		$('.sprite').css("background-position", "-740px")
 
 				    	});
+				    	$(".sprite").fadeIn(500);
+
 				    	
 				        
 				        
