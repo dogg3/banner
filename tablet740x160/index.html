@@ -25,7 +25,12 @@
 						count++;
 				        break;
 				    case 1:
-				        $(".sprite").css("background-position", "-1480px");
+				    	$(".sprite").fadeOut(600, function(){
+				        	$(".sprite").css("background-position", "-1480px");
+				        	$(".line").hide();
+
+				        });
+				        $(".sprite").fadeIn(500);
 	    				count++;
 				        break;
 				    default:
