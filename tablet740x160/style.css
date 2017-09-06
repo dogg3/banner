@@ -25,16 +25,24 @@ span {
 }
 
 header, footer {
-	
-	height:10%;
+	height:40px;
 	width:100%;
+}
+
+.rightSlideText{
+	width : 120px;
+	height: auto;
+}
+
+.leftSlideText{
+	width: 120px;
+	height: auto;
 }
 
 #textLeft {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color:white;
 	text-align: center;
 	margin-right: 20px;
 }
@@ -43,10 +51,6 @@ header, footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color:white;
 	text-align: center;
 	margin-left: 20px;
-
-
-
 }

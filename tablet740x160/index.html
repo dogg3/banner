@@ -8,7 +8,7 @@
     <script type="text/javascript">
 		$(document).ready(function(){
     		var count = 0;
-    		$("#textLeft").html("<p>11 lägenhet med pool, där du inte<br> behöver välja mellan aktiv livstil och egentid</p>");
+    		$("#textLeft").html("<img src='111.svg' style='width : 450px; height : auto;'>");
 			var img = function(){
 	    		switch(count) {
 				    case 0:
@@ -18,11 +18,9 @@
 
 				    	});
 				    	$(".sprite").fadeIn(500, function(){
-				    		$('#textLeft').html("<h2>allrum</h2>");
-				    		$('#textRight').html("<h2>vilorum</h2>")
+				    		$('#textLeft').html("<img class='leftSlideText' src='allrum.svg'>");
+				    		$('#textRight').html("<img class='rightSlideText' src='vilorum.svg'>")
 				    		$(".line").show(300, function(){
-				    			
-
 				    		});
 
 				    	});
@@ -30,8 +28,8 @@
 				        break;
 				    case 1:
 				    	$(".sprite").fadeOut(600, function(){
-				    		$('#textLeft').html("<h2>INOMHUS</h2>");
-				    		$('#textRight').html("<h2>UTOMHUS</h2>");
+				    		$('#textLeft').html("<img class='leftSlideText' src='inomhus.svg'>");
+				    		$('#textRight').html("<img class='rightSlideText' src='utomhus.svg'>");
 				        	$(".sprite").css("background-position", "-1480px");
 				        	$(".line").hide();
 
@@ -62,7 +60,7 @@
 
 				    	});
 				    	$(".sprite").fadeIn(300, function(){
-				    		$("#textLeft").html("<p>11 lägenhet med pool, där du inte<br> behöver välja mellan aktiv livstil och egentid</p>");
+				    		$("#textLeft").html("<img src='111.svg'>");
 
 				    	});
 						count = 0;
@@ -76,13 +74,13 @@
   </head>
   <body>
     <div class="sprite">
-    <header></header>
+    <header><img src="vasjosollentuna.svg" style="float : left; width : 110px; height : auto; margin-top : 1.5%; padding-left : 2%;"><img src="glommen_logo.svg" style="width : 200px; height: auto; float : right;"></header>
     	<div class="container">
     	<div id="textLeft"></div>
     		<span class="line"></span>
     	<div id="textRight"></div>
     </div>
-    <footer></footer>
+    <footer><img src="brfversus.svg" style="float : right; width : 90px; height : auto; padding-right : 2%;"></footer>
    </div>
   </body>
 </html>
