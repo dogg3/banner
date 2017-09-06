@@ -18,8 +18,8 @@
 
 				    	});
 				    	$(".sprite").fadeIn(500, function(){
-				    		$('#textLeft').html("<img class='leftSlideText' src='allrum.svg'>");
-				    		$('#textRight').html("<img class='rightSlideText' src='vilorum.svg'>")
+				    		$('#textLeft').html("<img style='width : 120px; height=auto;' src='allrum.svg'>");
+				    		$('#textRight').html("<img style='width : 120px; height=auto;' src='vilorum.svg'>")
 				    		$(".line").show(300, function(){
 				    		});
 
@@ -28,8 +28,8 @@
 				        break;
 				    case 1:
 				    	$(".sprite").fadeOut(600, function(){
-				    		$('#textLeft').html("<img class='leftSlideText' src='inomhus.svg'>");
-				    		$('#textRight').html("<img class='rightSlideText' src='utomhus.svg'>");
+				    		$('#textLeft').html("<img style='width : 135px; height=auto;' src='inomhus.svg'>");
+				    		$('#textRight').html("<img style='width : 135px; height=auto;' src='utomhus.svg'>");
 				        	$(".sprite").css("background-position", "-1480px");
 				        	$(".line").hide();
 
@@ -40,40 +40,39 @@
 						count++;
 				        break;
 				    case 2:				    	
-				        	$(".sprite").css("background-position", "-1480px");
+				        	
 				        	$(".line").hide();
 				        	$('#textLeft').empty();
-				    		$('#textRight').empty();				       
-						count++;
+				    		$('#textRight').empty();
+				    		$("#textCenter").html("<img style='width : 300px; height : auto;'src='versus.svg'>");
+				    	count++;
 						break;
 				    case 3:
-				    	$('#textLeft').empty();
-				  		$('#textRight').empty();
+				    	$('#textCenter').empty();
 				  		$(".sprite").fadeOut(300, function(){
-				  			$(".line").hide();
 				    		$('.sprite').css("background-position", "-0px")
-				    		$('#textLeft').empty();
 
 				    	});
 				    	$(".sprite").fadeIn(300, function(){
-				    		$("#textLeft").html("<img style='width : 450px; height : auto;' src='111.svg'>");
+				    		$("#textLeft").html("<img style='width: 450px; height:auto;' src='111.svg'>");
 
 				    	});
 						count = 0;
-	    				break;
-	    			
+	    				break;  			
 
 				}
-    		}; setInterval(img, 4000);
+    		}; setInterval(img, 4500);
 		});
     </script>
   </head>
   <body>
+  	<a href="http://glommenlindberg.com/projekt/versus">
     <div class="sprite">
     <header><img src="vasjosollentuna.svg" style="float : left; width : 110px; height : auto; margin-top : 1.5%; padding-left : 2%;"><img src="glommen_logo.svg" style="width : 200px; height: auto; float : right;"></header>
     	<div class="container">
     	<div id="textLeft"></div>
     		<span class="line"></span>
+    		<div id="textCenter"></div>
     	<div id="textRight"></div>
     </div>
     <footer><img src="brfversus.svg" style="float : right; width : 90px; height : auto; padding-right : 2%;"></footer>

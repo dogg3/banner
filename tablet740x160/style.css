@@ -10,8 +10,8 @@
 
 
 span {
-	height:7px;
-	width:150px;
+	height:4px;
+	width:220px;
 	background-color: white;
 	display: none;
 }
@@ -29,16 +29,6 @@ header, footer {
 	width:100%;
 }
 
-.rightSlideText{
-	width : 120px;
-	height: auto;
-}
-
-.leftSlideText{
-	width: 120px;
-	height: auto;
-}
-
 #textLeft {
 	display: flex;
 	justify-content: center;
@@ -48,6 +38,14 @@ header, footer {
 }
 
 #textRight {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 20px;
+}
+
+#textCenter {
 	display: flex;
 	justify-content: center;
 	align-items: center;
