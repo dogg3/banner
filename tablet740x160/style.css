@@ -2,4 +2,14 @@
 	height: 160px;
 	width: 740px;
 	background-image: url('sprite_done_189.jpg');
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+span {
+	height:7px;
+	width:150px;
+	background-color: white;
 }

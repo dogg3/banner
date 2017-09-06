@@ -4,7 +4,6 @@
     <title>Desktop 740x160</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" type="text/css">
-    
     <script src="jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
 		$(document).ready(function(){
@@ -16,7 +15,10 @@
 				    		$('.sprite').css("background-position", "-740px")
 
 				    	});
-				    	$(".sprite").fadeIn(500);
+				    	$(".sprite").fadeIn(500, function(){
+				    		$(".sprite").html("<span></span>")
+
+				    	});
 
 				    	
 				        
