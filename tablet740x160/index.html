@@ -13,30 +13,32 @@
 			var img = function(){
 	    		switch(count) {
 				    case 0:
-				    	$(".sprite").fadeOut(500, function(){
+				    	$(".sprite").fadeTo(1000, 0.6, function(){
 				    		$('.sprite').css("background-position", "-740px")
 				    		$('#textLeft').empty();
 
 				    	});
-				    	$(".sprite").fadeIn(500, function(){
+				    	$(".sprite").fadeTo(300, 1, function(){
 				    		$('#textLeft').html("<img style='width : 120px; height=auto;' src='allrum.svg'>");
 				    		$('#textRight').html("<img style='width : 120px; height=auto;' src='vilorum.svg'>")
-				    		$(".line").show(300, function(){
+				    		$(".line").show(1000, function(){
 				    		});
 
 				    	});
 						count++;
 				        break;
 				    case 1:
-				    	$(".sprite").fadeOut(600, function(){
-				    		$('#textLeft').html("<img style='width : 135px; height=auto;' src='inomhus.svg'>");
-				    		$('#textRight').html("<img style='width : 135px; height=auto;' src='utomhus.svg'>");
+				    	$(".sprite").fadeTo(1000, 0.6, function(){
 				        	$(".sprite").css("background-position", "-1480px");
+				        	$('#textLeft').empty();
+				    		$('#textRight').empty();
 				        	$(".line").hide();
 
 				        });
-				        $(".sprite").fadeIn(500, function(){
-								$(".line").show(300);
+				       $(".sprite").fadeTo(300, 1, function(){
+				        		$('#textLeft').html("<img style='width : 135px; height=auto;' src='inomhus.svg'>");
+				    			$('#textRight').html("<img style='width : 135px; height=auto;' src='utomhus.svg'>");
+								$(".line").show(1000);
 				        });
 						count++;
 				        break;
@@ -50,11 +52,11 @@
 						break;
 				    case 3:
 				    	$('#textCenter').empty();
-				  		$(".sprite").fadeOut(300, function(){
+				  		$(".sprite").fadeTo(1000, 0.6, function(){
 				    		$('.sprite').css("background-position", "-0px")
 
 				    	});
-				    	$(".sprite").fadeIn(300, function(){
+				    	$(".sprite").fadeTo(1000, 1, function(){
 				    		$("#textLeft").html("<img style='width: 450px; height:auto;' src='111.svg'>");
 
 				    	});
